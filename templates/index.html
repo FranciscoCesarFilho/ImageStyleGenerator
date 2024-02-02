@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageStyleGenerator.AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1>ImageStyleGenerator.AI</h1>
+        <form method="POST" action="/process" enctype="multipart/form-data" class="upload-form">
+            <input type="file" name="file" multiple class="file-input">
+            <button type="submit" class="submit-button">Processar</button>
+        </form>
+        {% if result_image %}
+        <img src="{{ url_for('static', filename=result_image) }}" alt="Resultado" class="result-image">
+        {% endif %}
+    </div>
+</body>
+
+</html>

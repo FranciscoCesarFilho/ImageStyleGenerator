@@ -1,0 +1,76 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Estilo para o logotipo */
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    /* Adiciona margem na parte inferior para separar do título */
+    max-width: 200px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #343a40;
+}
+
+/* Estilo para o formulário */
+.upload-form {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilo para o botão de envio */
+.submit-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o botão de envio quando passa o mouse */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a entrada de arquivo */
+.file-input {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilo para a entrada de arquivo quando focada */
+.file-input:focus {
+    border-color: #007bff;
+}
+
+/* Estilo para a imagem processada */
+.result-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
