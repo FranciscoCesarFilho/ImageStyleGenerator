@@ -12,7 +12,7 @@ def index():
     return render_template('index.html', result_image=None)
 
 def process_image(uploaded_file):
-    checkpoint = './weights/face_paint_512_v2.pt'
+    checkpoint = './model/model.pt'
     input_dir = './samples/inputs'
     output_dir = 'static'
     device = 'cpu'
